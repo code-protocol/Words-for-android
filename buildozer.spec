@@ -1,19 +1,19 @@
 [app]
 
 # (str) Title of your application
-title = Words
+title = Mobile App 001
 
 # (str) Package name
-package.name = words01
+package.name = mobileapp001
 
 # (str) Package domain (needed for android/ios packaging)
-# package.domain = org.wiseplat
+package.domain = org.wiseplat
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-#source.include_exts =
+#source.include_exts = py,png,jpg,kv,atlas,po,mo
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.1.0
+requirements = python3,kivy==2.0.0
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -46,7 +46,7 @@ requirements = python3,kivy==2.1.0
 #presplash.filename = %(source.dir)s/data/logo/presplash512okmin.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/favicon_.ico
+#icon.filename = %(source.dir)s/data/logo/logo512min.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = all
@@ -72,7 +72,7 @@ osx.kivy_version = 2.0.0
 #
 
 # (bool) Indicate if the application should be fullscreen or not
-fullscreen = 1
+fullscreen = 0
 
 # (string) Presplash background color (for android toolchain)
 # Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
