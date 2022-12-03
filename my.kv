@@ -1,0 +1,92 @@
+
+
+<ItemLabel@Label>
+    font_size: '25sp'
+
+<Container>:
+    rows: 4
+
+    label_enterworld_size: enterworld_size
+    enterworld: text_input
+    label_widget: label
+    label_translate: translate
+    label_count: count
+    label_repetition: repetition
+    label_writing: writing
+    label_file: file
+
+    AnchorLayout:
+        id: enterworld_size
+        size_hint: 1, 0
+
+        TextInput:
+            id: text_input
+            multiline: False
+            font_size: 40
+
+
+    Button:
+        background_color: (0, 0, 0)
+        id: label
+        text: 'Press Next'
+        font_size: 40
+
+        on_release:
+            root.check_word()
+
+    GridLayout:
+        size_hint: 0.4, 0.05
+        cols: 1
+
+        BoxLayout:
+            orientation: 'vertical'
+            ItemLabel:
+                id: count
+                text: '0'
+
+
+    BoxLayout:
+        size_hint: 0.4, 0.3
+        padding: '5sp'
+        cols: 2
+        BoxLayout:
+            padding: '5sp'
+            orientation: 'vertical'
+            cols: 2
+
+            Button:
+                id: repetition
+                text: 'Repetition: OFF'
+                font_size: '25sp'
+
+                on_release:
+                    root.check_repetition()
+
+            Button:
+                id: writing
+                text: 'Writing: OFF'
+                font_size: '25sp'
+
+                on_release:
+                    root.check_writing()
+
+        BoxLayout:
+            padding: '5sp'
+            orientation: 'vertical'
+            cols: 2
+
+            Button:
+                id: translate
+                text: 'Translate: EN'
+                font_size: '25sp'
+
+                on_release:
+                    root.translate()
+
+            Button:
+                id: file
+                text: 'File: Learn'
+                font_size: '25sp'
+
+                on_release:
+                    root.check_file()
