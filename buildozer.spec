@@ -7,13 +7,13 @@ title = Words
 package.name = words01
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.wiseplat
+# package.domain = org.wiseplat
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-#source.include_exts = py,png,jpg,kv,atlas,po,mo
+#source.include_exts =
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -46,7 +46,7 @@ requirements = python3,kivy==2.1.0
 #presplash.filename = %(source.dir)s/data/logo/presplash512okmin.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/logo/logo512min.png
+icon.filename = %(source.dir)s/favicon_.ico
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = all
@@ -72,7 +72,7 @@ osx.kivy_version = 2.0.0
 #
 
 # (bool) Indicate if the application should be fullscreen or not
-fullscreen = 0
+fullscreen = 1
 
 # (string) Presplash background color (for android toolchain)
 # Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
